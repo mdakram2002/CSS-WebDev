@@ -1,0 +1,45 @@
+/** @format */
+
+#navbar {
+  background-color: aqua;
+  display: flex;
+  justify-content: space-evenly;
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: square;
+  display: inline;
+}
+
+/* .outerdiv {
+  background-color: wheat;
+  height: 400px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.innerdiv {
+  /* background-color: darkgreen; */
+  height: 300px;
+  width: 300px;
+}
+/* if i use @media tag, then change in box/div when screen is at empect of 600px */
+@media (width: 600px) {
+  div {
+    background-color: rgb(78, 25, 212);
+  }
+}
+@media (min-width: 700px) {
+  div {
+    background-color: red;
+  }
+}
+@media (min-width: 200px) and (max-width: 300px) {
+  div {
+    background-color: green;
+  }
+}

@@ -1,0 +1,57 @@
+/** @format */
+
+#first {
+  height: 200px;
+  width: 200px;
+  color: rgb(202, 9, 9);
+  border: 2px solid rgb(27, 180, 10);
+  border-radius: 2px;
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: steps(5s);
+  transition-delay: 1s;
+  position: absolute;
+  transform: scale(1.5);
+  top: 100px;
+  left: 200px;
+  /* text-align: center;
+  flex-direction: center; 
+  rotate: 45deg;  */
+  /* animation-name: colouranimation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse; */
+  animation: colouranimation 5s linear 1s infinite normal;
+}
+div:hover {
+  background-color: blue;
+  color: rgb(225, 29, 42);
+  font-size: 20px;
+
+  /* rotate: 45deg;
+  transform: scale(1.5);
+  transform: translate(200px, 200px);
+  transform: skew(90deg); */
+}
+
+div:active {
+  background-color: rgb(217, 234, 33);
+}
+
+@keyframes colouranimation {
+  0% {
+    left: 0px;
+    background-color: #310af6;
+    color: rgb(246, 246, 244);
+  }
+  50% {
+    background-color: #14dc4d;
+  }
+  100% {
+    left: 300px;
+    background-color: #eeff50;
+    color: rgb(238, 14, 33);
+  }
+}
